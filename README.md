@@ -122,3 +122,9 @@ buttonPanel.add(cancel);
 Now you can call `cancel.addActionListener` just like you did for `submit`.
 
 When you run it, try entering some text into the name fields and clicking `Cancel`. It should clear the text fields.
+
+## Further reading
+
+You can visit here for different ways to organize your user interface: https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html
+
+We recommend using nested `JPanel`s with `BoxLayout`s. This isn't a user experience course! We're not grading you on how nice your UI looks!
