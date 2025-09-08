@@ -1,7 +1,14 @@
 # JavaGUIExamples
-This is a quick introduction to Java Swing, one of the Graphical User Interface (GUI) libraries in Java. The various visual classes are defined in package `javax.swing`. 
+
+This is a quick introduction to Java Swing, one of the Graphical User Interface (GUI) libraries in Java.
 
 Many of the examples are inspired by the official Java tutorials: https://docs.oracle.com/javase/tutorial/uiswing/.
+
+The various visual classes are defined in package `javax.swing`. Most classes in that package begin with a `J`: a clickable button is defined in class `javax.swing.JButton`, for example.
+
+All the visual objects are called _components_.
+As an example, `JPanel` is a component that can contain other components, including `JButton`s and even other `JPanel`s.
+
 
 ## Creating and showing a window in Java
 
@@ -33,6 +40,10 @@ SwingUtilities.invokeLater(() -> {
 Read the complete example here: [MainFrame.java](src%2FMainFrame.java)
 
 ## Java Swing visual components
+
+Every GUI user interface class is called a _component_: `JButton`s are components, for example.
+
+The user interface is _event-driven_: you tell what method to call for each possible event. A button click is an event, for example.
 
 <img src="images/ButtonClickExample.png" align="right" width="300px" style="margin:16px;"/>
 The window to the right has the following components:
@@ -106,7 +117,9 @@ When you run it, you'll see a popup window. `JOptionPane.howMessageDialog` does 
 
 Make sure you read and understand the example: [ButtonClickExample.java](src%2FButtonClickExample.java)
 
-As an exercise, add an action listener to the `Cancel` button that clears the text fields by calling method `setText`. You'll need to start by refactoring the cancel button code:
+## Exercise: click `Cancel` to clear the text fields
+
+For practice, add an action listener to the `Cancel` button that clears the text fields by calling method `setText`. You'll need to start by refactoring the cancel button code:
 
 Old:
 ```java
