@@ -30,6 +30,14 @@ public class ButtonClickExample {
                 }
             });
 
+            cancel.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    firstNameField.setText("");
+                    lastNameField.setText("");
+                }
+            });
+
             JPanel mainPanel = new JPanel();
             mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
             mainPanel.add(firstNamePanel);
